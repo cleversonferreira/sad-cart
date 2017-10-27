@@ -1,0 +1,113 @@
+@-webkit-keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(1px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-1px) rotate(-2deg);
+  }
+}
+
+@keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(1px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-1px) rotate(-2deg);
+  }
+}
+
+.buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
+  -webkit-animation-duration: 0.18s;
+  animation-duration: 0.18s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.body_movel {
+  width: 200px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-left: -100px;
+  margin-top: -90px;
+  border-top: 15px solid #0054A6;
+  border-left: 15px solid #0054A6;
+  border-right: 15px solid #0054A6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.movel_olho {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 85px;
+  height: 95px;
+  border-bottom: 15px solid #0054A6;
+}
+
+.olho_int {
+  position: relative;
+  margin: 35px auto;
+  display: table;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0054A6;
+}
+
+.sobrancelha_int {
+  position: absolute;
+  display: table;
+  width: 30px;
+  height: 8px;
+  border-radius: 0 0 100% 100%;
+  background-color: #0054A6;
+}
+
+.sobrancelha_int_1 {
+  top: -1px;
+  transform: rotate(-35deg) scale(0.9, 0.4);
+  left: -10px;
+}
+
+.sobrancelha_int_2 {
+  top: -1px;
+  transform: rotate(35deg) scale(0.9, 0.4);
+  right: -10px;
+}
+
+.mo_1 {
+  border-left: 5px solid #0054A6;
+}
+
+.mo_2 {
+  border-right: 5px solid #0054A6;
+}
+
+.movel_boca {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 300px;
+  margin-left: -67px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 15px;
+  border-top: 15px solid #0054A6;
+}
